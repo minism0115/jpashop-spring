@@ -1,9 +1,7 @@
 package jpabook.jpashop.Repository;
 
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
-import jakarta.persistence.TypedQuery;
-import jpabook.jpashop.domain.Member;
+import jpabook.jpashop.exception.domain.Member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

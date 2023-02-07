@@ -1,0 +1,18 @@
+spring:
+  datasource:
+#    메모리 모드로 실행, 사실상 datasource와 jpa에 대한 설정이 아무것도 없어도 스프링부트가 기본적으로 메모리 db로 실행
+    url: jdbc:h2:mem:test
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        #        show_sql: true
+        format_sql: true
+logging.level:
+  org.hibernate.SQL: debug
+#  쿼리 파라미터 로그 남기기
+  org.hibernate.type: trace
