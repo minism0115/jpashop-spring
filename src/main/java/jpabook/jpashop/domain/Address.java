@@ -1,4 +1,4 @@
-package jpabook.jpashop.exception.domain;
+package jpabook.jpashop.domain;
 
 import jakarta.persistence.Embeddable;
 import lombok.Getter;

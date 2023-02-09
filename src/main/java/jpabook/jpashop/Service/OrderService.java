@@ -3,14 +3,17 @@ package jpabook.jpashop.Service;
 import jpabook.jpashop.Repository.ItemRepository;
 import jpabook.jpashop.Repository.MemberRepository;
 import jpabook.jpashop.Repository.OrderRepository;
-import jpabook.jpashop.exception.domain.Delivery;
-import jpabook.jpashop.exception.domain.Member;
-import jpabook.jpashop.exception.domain.Order;
-import jpabook.jpashop.exception.domain.OrderItem;
-import jpabook.jpashop.exception.domain.item.Item;
+import jpabook.jpashop.Repository.OrderSearch;
+import jpabook.jpashop.domain.Delivery;
+import jpabook.jpashop.domain.Member;
+import jpabook.jpashop.domain.Order;
+import jpabook.jpashop.domain.OrderItem;
+import jpabook.jpashop.domain.item.Item;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @Service
 @Transactional(readOnly = true)
@@ -64,4 +67,7 @@ public class OrderService {
     /**
      * 주문 검색
      */
+    public List<Order> findOrders(OrderSearch orderSearch){
+        return orderRepository.findAllByString(orderSearch);
+    }
 }

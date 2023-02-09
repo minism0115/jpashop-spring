@@ -1,7 +1,7 @@
 package jpabook.jpashop.Repository;
 
 import jakarta.persistence.EntityManager;
-import jpabook.jpashop.exception.domain.item.Item;
+import jpabook.jpashop.domain.item.Item;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
@@ -17,7 +17,7 @@ public class ItemRepository {
         if(item.getId() == null){
             em.persist(item);
         } else {
-            em.merge(item); // update랑 비슷한 것
+            em.merge(item); // update랑 비슷한 것, 실무에서는 쓰지 않는 게 좋다. null이 들어갈 위험성이 너무 크기 때문에.
         }
     }
 

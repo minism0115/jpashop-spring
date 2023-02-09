@@ -1,12 +1,11 @@
-package jpabook.jpashop.exception.domain;
+package jpabook.jpashop.domain;
 
 import jakarta.persistence.*;
-import jpabook.jpashop.exception.domain.item.Item;
+import jpabook.jpashop.domain.item.Item;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.aspectj.weaver.ast.Or;
 
 @Entity
 @Getter
