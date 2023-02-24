@@ -6,7 +6,6 @@ import jpabook.jpashop.Service.MemberService;
 import jpabook.jpashop.domain.Member;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
