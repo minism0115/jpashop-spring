@@ -2,7 +2,7 @@ package jpabook.jpashop.Service;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
-import jpabook.jpashop.Repository.OrderRepository;
+import jpabook.jpashop.repository.OrderRepository;
 import jpabook.jpashop.exception.NotEnoughStockException;
 import jpabook.jpashop.domain.Address;
 import jpabook.jpashop.domain.Member;
