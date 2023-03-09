@@ -3,6 +3,7 @@ package jpabook.jpashop.Service;
 import jakarta.persistence.EntityManager;
 import jpabook.jpashop.repository.MemberRepository;
 import jpabook.jpashop.domain.Member;
+import jpabook.jpashop.repository.MemberRepositoryOld;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,7 @@ public class MemberServiceTest {
     @Autowired
     MemberService memberService;
     @Autowired
-    MemberRepository memberRepository;
+    MemberRepositoryOld memberRepository;
 
     @Autowired
     EntityManager em;
